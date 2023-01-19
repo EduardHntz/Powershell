@@ -1,0 +1,25 @@
+<#
+This script will use an array and a foreach loop to create multiple txt files inside the given path, with the name "file+ArrayIndex".txt
+
+#>
+
+$path = "C:\Users\ehien\Powershell"
+
+$files = 1..5
+
+$files | ForEach-Object {
+
+    New-item -path "$path\file$_.txt"
+
+}
+
+
+
+Output : will create 5 txt files
+
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+
