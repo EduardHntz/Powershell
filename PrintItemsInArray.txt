@@ -1,0 +1,19 @@
+
+<#This little script will print the items inside an array, depending on how many values we insert. Also, the we are using a WHILE LOOP. 
+  The starting value is defined prior to the WHILE LOOP. We can loop the array how many times we want, but in this case we are looping it for as many times as the length of the array, minus 1.
+  So it will not print the last number 11123.
+  Also, we are incrementing it by 1 each time the loop is run.
+#>
+
+
+$myList = @(5.6, 4.5, 3.3, 13.2, 4.0, 34.33, 34.0, 45.45, 99.993, 11123)
+
+$i = 0
+
+While($i -lt ($myList.Length-1) ) {
+
+$myList[$i];
+$i++
+
+}
+
